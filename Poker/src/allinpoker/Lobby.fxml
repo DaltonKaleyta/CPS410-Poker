@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="LobbyLayout" prefHeight="750.0" prefWidth="700.0" styleClass="background" stylesheets="@MainStyle.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allinpoker.LobbyController">
+   <children>
+      <Label fx:id="lobbyHeader" layoutX="40.0" layoutY="25.0" styleClass="title" text="Game Lobby" />
+      <TableView layoutX="215.0" layoutY="115.0" prefHeight="525.0" prefWidth="480.0">
+        <columns>
+          <TableColumn maxWidth="40" minWidth="40.0" text="ID" />
+          <TableColumn maxWidth="152" minWidth="152.0" text="Table Name" />
+          <TableColumn maxWidth="96" minWidth="96.0" text="Seats" />
+          <TableColumn maxWidth="96" minWidth="96.0" text="Duration" />
+          <TableColumn maxWidth="96" minWidth="96.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="543.0" layoutY="49.0" mnemonicParsing="false" text="Create New game" onAction="#createNewGame"/>
+      <Button layoutX="586.0" layoutY="659.0" mnemonicParsing="false" text="Join Game" />
+      <Button layoutX="215.0" layoutY="659.0" mnemonicParsing="false" text="Refresh" />
+      <Button id="btnBack" layoutX="16.0" layoutY="679.0" mnemonicParsing="false" onAction="#btnBackHandler" text="Back" />
+   </children>
+</AnchorPane>

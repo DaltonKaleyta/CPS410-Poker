@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 27, 2017, 7:37:30 PM
+    Author     : Kaleyta
+*/
+
+.background {
+    -fx-background-image: url("../res/CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+
+TextField{
+    
+    -fx-background-color:
+        rgba(255, 255, 255, 0.3),
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),
+        rgb(218, 226, 224);
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-size: 14;
+    -fx-font-family: "Century";
+}
+
+Button{
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, #6D7C8C, #191d22);
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Century";
+    -fx-text-fill: linear-gradient(white, #AFAFAF);
+    -fx-font-size: 16px;
+    -fx-padding: 10 10 10 10;
+}
+
+TableView{
+    -fx-background-color: radial-gradient(center 50% 50%, radius 80%, #6D7C8C, #191d22);
+    -fx-background-radius: 5,5,5,5;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.column-header{
+    -fx-background-color: #20262b;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.column-header .label{
+    -fx-font-family: "Century";
+    -fx-text-fill: linear-gradient(white, #AFAFAF);
+    -fx-font-size: 14px;
+}
+
+.status{
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.title{
+    -fx-font-family: "Century"; 
+    -fx-font-size: 64;
+    -fx-text-fill: radial-gradient(center 50% 10%, radius 60%, #FFFFFF, #AFAFAF);
+    -fx-effect: dropshadow( one-pass-box , #212121, 9, 0.5 , 0 , 1 );
+}
+
+#lobbyHeader{
+    -fx-font-size: 50;
+}
+
+#userHeader{
+    -fx-font-family: "Century"; 
+    -fx-font-size: 24;
+    -fx-text-fill: radial-gradient(center 50% 10%, radius 60%, #FFFFFF, #AFAFAF);
+    -fx-effect: dropshadow( one-pass-box , #212121, 9, 0.5 , 0 , 1 );
+}
+
+#pokerTable{
+    -fx-fill:activeborder;
+}
